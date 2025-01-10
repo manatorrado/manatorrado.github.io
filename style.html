@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANÁ TORRADO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+
+    
+    /* Configuração geral do body */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000000;
+    }
+
+    /* Contêiner para as imagens */
+    .banner-container {
+      display: flex;
+      flex-direction: column; /* Imagens em layout vertical */
+      width: 100%; /* Ocupa toda a largura no celular */
+      max-width: 1200px; /* Aumenta para desktop */
+      position: relative;
+        width: 100%;
+    }
+
+    /* Imagens responsivas */
+    .banner-container img {
+      width: 100%; /* Ajusta para o tamanho do contêiner */
+      height: auto; /* Mantém proporção */
+      margin: 0; /* Remove espaço entre as imagens */
+    }
+
+    /* primeira imagem*/
+
+            .btn-quero-meu {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        top: 13.2%; /* Ajuste conforme necessário para a posição */
+        left: 24%;
+        transform: translateX(-50%);
+        padding: 20px 66px;
+        border-radius: 25px; /* Para deixar o botão arredondado */
+        background-color: #d6cf3f ; /* Cor do botão */
+        color: white;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        animation: pulsar 1.5s infinite; /* Animação de pulsação */
+        }
+
+                    @keyframes pulsar {
+            0% {
+                transform: translateX(-50%) scale(1); /* Tamanho normal */
+            }
+            50% {
+                transform: translateX(-50%) scale(1.1); /* Aumenta o tamanho */
+            }
+            100% {
+                transform: translateX(-50%) scale(1); /* Volta ao tamanho original */
+            }
+            }
+
+        .btn-quero-meu:hover {
+        background-color: #00bb4e; /* Cor ao passar o mouse */
+        }
+
+       
+
+
+    /*---------------*/
+
+    /* segunda imagem*/
+
+    /*---------------*/
+
+     /* terceira imagem*/
+
+    /*---------------*/
+
+     /* quarta imagem*/
+
+    /*---------------*/
+
+     /* quinta imagem*/
+
+    /*---------------*/
+
+     /* sexta imagem*/
+
+     .social-icons {
+        background-color: #d6cf3f;
+  position: absolute;
+  bottom: 135px; /* Ajuste conforme necessário */
+  left:20.5%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px; /* Espaço entre os ícones */
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d6cf3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+
+}
+
+.social-icon:hover {
+  background-color:  #00bb4e;; /* Cor ao passar o mouse */
+}
+
+.social-icon.whatsapp {
+    
+  background-image: url(whatsapp-new.png);
+  background-size: 80%; /* Ajusta o tamanho do ícone dentro do círculo */
+  background-position: center; /* Centraliza o ícone dentro do círculo */
+  background-repeat: no-repeat; /* Garante que a imagem não repita */
+
+}
+
+.social-icon.instagram {
+  background-image: url(instagram-new.png); /* Substitua pelo ícone do Instagram */
+  background-size: 85%; /* Ajusta o tamanho do ícone dentro do círculo */
+  background-position: center; /* Centraliza o ícone dentro do círculo */
+  background-repeat: no-repeat; /* Garante que a imagem não repita */
+  
+}
+
+.social-icon.facebook {
+  background-image: url(facebook-new.png); /* Substitua pelo ícone do Facebook */
+  background-size: 85%; /* Ajusta o tamanho do ícone dentro do círculo */
+  background-position: center; /* Centraliza o ícone dentro do círculo */
+  background-repeat: no-repeat; /* Garante que a imagem não repita */
+}
+
+
+    /*---------------*/
+
+
+
+  </style>
+</head>
+<body>
+   
+
+
+
+  <div class="banner-container">
+    <!-- Substitua os src pelos caminhos das suas imagens -->
+    <div class="banner-container">
+        
+        
+            <img src="inicio.png" alt="Banner 1">
+            <button class="btn-quero-meu">QUERO O MEU!</button>
+            
+        <img src="sobre.png" alt="Banner 2">
+        <img src="emojis.png" alt="Banner 3">
+        <img src="depoimentos.png" alt="Banner 4">
+        <img src="fundadores.png" alt="Banner 5">
+        <img src="contatos.png" alt="Banner 6">
+        <div class="social-icons">
+          <a href="https://wa.me/5527999101211" target="_blank" class="social-icon whatsapp"></a>
+          <a href="https://www.instagram.com/manatorradoofc" target="_blank" class="social-icon instagram"></a>
+          <a href="https://www.facebook.com/yourprofile" target="_blank" class="social-icon facebook"></a>
+        </div>
+
+  </div>
+</body>
+</html>
