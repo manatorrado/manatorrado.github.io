@@ -145,7 +145,54 @@
 
     /*---------------*/
 
+  /* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+  .btn-quero-meu {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        top: 13.2%; /* Ajuste conforme necessário para a posição */
+        left: 24%;
+        transform: translateX(-50%);
+        padding: 5px 20px;
+        border-radius: 25px; /* Para deixar o botão arredondado */
+        background-color: #d6cf3f ; /* Cor do botão */
+        color: white;
+        border: none;
+        font-size: 13px;
+        cursor: pointer;
+        animation: pulsar 1.5s infinite; /* Animação de pulsação */
+        }
 
+                    @keyframes pulsar {
+            0% {
+                transform: translateX(-50%) scale(1); /* Tamanho normal */
+            }
+            50% {
+                transform: translateX(-50%) scale(1.1); /* Aumenta o tamanho */
+            }
+            100% {
+                transform: translateX(-50%) scale(1); /* Volta ao tamanho original */
+            }
+            }
+
+        .btn-quero-meu:hover {
+        background-color: #00bb4e; /* Cor ao passar o mouse */
+        }
+
+        .social-icon {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          background-color: #d6cf3f;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-size: cover;
+
+}
+
+
+}
 
   </style>
 </head>
@@ -159,7 +206,7 @@
     <div class="banner-container">
         
         
-             <img src="inicio.png" alt="Banner 1">
+            <img src="inicio.png" alt="Banner 1">
             <a href="https://wa.me/5527999101211" target="_blank">
               <button class="btn-quero-meu">QUERO O MEU!</button>
             </a>
